@@ -284,6 +284,7 @@ async function onLogin() {
     selectedUserId.value = null
     usersError.value = ''
     messagesError.value = ''
+    await loadUsers()
   } catch {
     loginError.value = 'Network error'
   } finally {
